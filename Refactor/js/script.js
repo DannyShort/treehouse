@@ -1,6 +1,5 @@
 let html = '';
-let rgbColor;
-const numOfCircles = 100;
+const numOfCircles = 3000;
 
 function getRandomNumber() {
   return randNum = Math.floor(Math.random() * 256 );
@@ -14,9 +13,8 @@ function randomColor() {
   return color
 }
 
-for ( let i = 0; i < numOfCircles; i +=1) {
-rgbColor = randomColor();
-html += '<div style="background-color:' + rgbColor + '"></div>';
+for ( let i = 0; i < numOfCircles; i += 1) {
+html += `<div style="background-color:${randomColor()}"></div>`;
 }
 
 document.write(html);
