@@ -13,3 +13,5 @@ while ( counter <10000 ) {
   document.write(`${RANDOM_NUMBER} `);
   counter += 1;
 }
+
+
