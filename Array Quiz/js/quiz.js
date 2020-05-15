@@ -6,6 +6,28 @@ function print(message) {
   document.write(message);
 }
 
+/**
+ * takes an array and creates a HTML <ol>
+ * @param {array} list
+ * @return {string}
+ */
+function printList( list ) {
+  let listHTML = `<ol>`;
+  for (i = 0; i < list.length; i += 1) {
+    listHTML += `<li>${list[i]}</li>`;
+  }
+  listHTML += `</ol>`;
+  return listHTML;
+}
+
+/**
+ * gets a random number between 0 and the length of the ALL_QUESTIONS array
+ * @return {number}
+ */
+function getRandomNumber() {
+  return randNum = Math.floor(Math.random() * ALL_QUESTIONS.length );
+}
+
 const ALL_QUESTIONS = [
   ['What is the capital city of Afghanistan?', 'kabul'],
   ['What is the capital city of Albania?', 'tirana'],
@@ -208,15 +230,37 @@ const ALL_QUESTIONS = [
 ];
 
 let score = 0;
+let rank = '';
+const CORRECT_QUESTIONS = [];
+const WRONG_QUESTIONS = [];
 
-for (i = 0; i < ALL_QUESTIONS.length; i += 1) {
-  const ANSWER = prompt(ALL_QUESTIONS[i][0]);
-  if (ANSWER.toLowerCase() === ALL_QUESTIONS[i][1]) {
+for (i = 0; i < 10; i += 1) {
+  const RANDOM_QUESTION = getRandomNumber();
+  const ANSWER = prompt(ALL_QUESTIONS[RANDOM_QUESTION][0]);
+  if (ANSWER.toLowerCase() === ALL_QUESTIONS[RANDOM_QUESTION][1]) {
+    CORRECT_QUESTIONS.push(ALL_QUESTIONS[RANDOM_QUESTION][0]);
     score += 1;
   } else if ( ANSWER.toLowerCase() === 'quit') {
     break;
+  } else {
+    WRONG_QUESTIONS.push(ALL_QUESTIONS[RANDOM_QUESTION][0]);
   }
 }
 
-const FINAL_SCORE_MESSAGE = `Your got ${score} out of ${i+1}`;
-print(FINAL_SCORE_MESSAGE);
+if (score < 3) {
+  rank = 'You could to do better. Try again.';
+} else if (score >= 3 && score < 4) {
+  rank = 'Not to shabby. Keep trying to improve your score.';
+} else if (score >= 4 && score < 6) {
+  rank = 'Well Done. Your on your way to geography greatness';
+} else {
+  rank = 'Congrats! Your a geography master';
+}
+
+const FINAL_SCORE_MESSAGE = `Your scored ${score} out of ${i}`;
+print(`${FINAL_SCORE_MESSAGE}. ${rank}`);
+print(`<h2>You Answered These Questions Correctly</h2>`);
+print(printList(CORRECT_QUESTIONS));
+print(`<h2>You Answered These Questions Incorrectly</h2>`);
+print(printList(WRONG_QUESTIONS));
+
