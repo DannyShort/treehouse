@@ -8,7 +8,7 @@
       "name": "Launch index.html",
       "type": "chrome",
       "request": "launch",
-      "file": "${workspaceFolder}/Array Quiz/index.html"
+      "file": "${workspaceFolder}/student-report/index.html"
   },
   ]
 }
