@@ -2,44 +2,44 @@
  * Calculates the perimeter of a rectangle
  * @param {number} width - the width of the rectangle
  * @param {number} height  - the height of the rectangle
- * @returns {number} - the perimeter of the rectangle
+ * @return {number} - the perimeter of the rectangle
  */
-function findPerimeter (width, height) {
-    if (isNaN(width) || isNaN(height)) {
-        throw Error('One of your values is not a number');
-    } else {
-        const perimeter = (width * 2) + (height * 2);
-        return perimeter;
-    }
+function findPerimeter(width, height) {
+  if (isNaN(width) || isNaN(height)) {
+    throw Error('One of your values is not a number');
+  } else {
+    const PERIMETER = (width * 2) + (height * 2);
+    return PERIMETER;
+  }
 }
 
 /**
  * Calculates two sum of two values
  * @param {number} a - Value One
  * @param {number} b - Value Two
- * @returns {number} 
+ * @return {number}
  */
 function addition(a, b) {
-    const sumOf = a + b;
-    return sumOf;
+  const SUM_OF = a + b;
+  return SUM_OF;
 }
 
 /**
- * 
- * @param {*} base 
- * @param {*} height 
+ *
+ * @param {*} base
+ * @param {*} height
  */
 function triArea(base, height) {
-    const area = (base * height) / 2;
-    return area;
+  const AREA = (base * height) / 2;
+  return AREA;
 }
 
-function getRemainder(a,b) {
-    const remainder = a % b;
-    return remainder;
+function getRemainder(a, b) {
+  const REMAINDER = a % b;
+  return REMAINDER;
 }
 
 function nextEdge(side1, side2) {
-    const edge = (side1 + side2) - 1;
-    return edge;
+  const EDGE = (side1 + side2) - 1;
+  return EDGE;
 }

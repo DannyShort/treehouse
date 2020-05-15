@@ -1,8 +1,6 @@
-let person = 'Lee';
+const PERSON = 'Lee';
 
 function greeting() {
-  let person = 'Meg';
-  alert(`Hi, ${person}!`);
+  const PERSON = 'Meg';
+  alert(`Hi, ${PERSON}!`);
 }
-
-alert

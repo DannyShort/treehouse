@@ -1,14 +1,14 @@
 function isFieldEmpty() {
-  const field = document.querySelector('#info');
-  if (field.value === '') {
+  const FIELD = document.querySelector('#info');
+  if (FIELD.value === '') {
     return true;
   } else {
     return false;
   }
 }
 
-const fieldTest = isFieldEmpty();
+const FIELD_TEST = isFieldEmpty();
 
-if (fieldTest) {
+if (FIELD_TEST) {
   alert('Please provide your imfomation');
 }

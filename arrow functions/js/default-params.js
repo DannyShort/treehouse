@@ -11,8 +11,8 @@ function sayGreeting (greeting = 'Good Morning,', name = 'student') {
  * @returns {string} - the area of a rectangle and its unit of measurement
  */
 function getArea(width, length, unit = 'Sq m') {
-    const area = width * length;
-    return `${area} ${unit}`;
+    const AREA = width * length;
+    return `${AREA} ${unit}`;
   }
 
 console.log(getArea(7,8));

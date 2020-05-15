@@ -1,4 +1,4 @@
 function getRandomNumber(upper) {
-  const randomNumber = Math.floor(Math.random() * upper ) + 1;
-  return randomNumber;
+  const RANDOM_NUMBER = Math.floor(Math.random() * upper ) + 1;
+  return RANDOM_NUMBER;
 }

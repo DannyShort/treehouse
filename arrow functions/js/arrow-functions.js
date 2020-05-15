@@ -1,9 +1,9 @@
-const getRandomNumber = (upper) => {
-  const randomNumber = Math.floor( Math.random() * upper ) + 1;
-  return randomNumber;
-}
+const GET_RANDOM_NUMBER = (upper) => {
+  const RANDOM_NUMBER = Math.floor( Math.random() * upper ) + 1;
+  return RANDOM_NUMBER;
+};
 
-const getArea = (width, height, unit) => {
-  const area = width * height;
-  return `${area} ${unit}`
-}
+const GET_AREA = (width, height, unit) => {
+  const AREA = width * height;
+  return `${AREA} ${unit}`;
+};
