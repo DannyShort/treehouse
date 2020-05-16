@@ -1,4 +1,4 @@
-const getRandomNumber = require('../JavaScript/Refactor/js/script.js');
+const getRandomNumber = require('../JS/Refactor/js/script.js');
 
 test('Returns random number between 0 & 256', () => {
   expect(getRandomNumber()).toBeGreaterThanOrEqual(0);
