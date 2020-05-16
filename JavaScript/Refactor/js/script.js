@@ -24,3 +24,5 @@ for ( let i = 0; i < NUMBER_OF_CIRCLES; i += 1) {
 }
 
 document.write(html);
+
+module.exports = getRandomNumber;

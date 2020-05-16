@@ -43,3 +43,5 @@ function nextEdge(side1, side2) {
   const EDGE = (side1 + side2) - 1;
   return EDGE;
 }
+
+module.exports = findPerimeter;

@@ -27,12 +27,26 @@
             <legend><span class="number">2</span> Your Profile</legend>
             <label for="bio">Biography</label>
             <textarea id="bio" name="user_bio"></textarea>
+            <label for="job">Job Role</label>
+            <select id="job" name="user_job">
+                <optgroup label="Web">
+                    <option value="front_end_developer">Front End Developer</option>
+                    <option value="php_developer">PHP Developer</option>
+                    <option value="python_developer">Python Developer</option>
+                    <option value="rails_developer">Rails Developer</option>
+                    <option value="web_designer">Web Designer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="android_developer">Android Developer</option>
+                    <option value="ios_developer">iOS Developer</option>
+                </optgroup>
+                <optgroup label="Business">
+                    <option value="business_owner">Business Owner</option>
+                    <option value="freelancer">Freelancer</option>
+                </optgroup>
+            </select>
         </fieldset>
             <button type="submit">Sign Up</button>
-
-
     </form>
-
 </body>
-
 </html>

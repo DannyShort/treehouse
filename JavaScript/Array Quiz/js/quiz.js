@@ -263,4 +263,3 @@ print(`<h2>You Answered These Questions Correctly</h2>`);
 print(printList(CORRECT_QUESTIONS));
 print(`<h2>You Answered These Questions Incorrectly</h2>`);
 print(printList(WRONG_QUESTIONS));
-
