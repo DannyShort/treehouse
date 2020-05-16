@@ -7,7 +7,7 @@
 function findPerimeter(width, height) {
   if (isNaN(width) || isNaN(height)) {
     throw Error('One of your values is not a number');
-  } else if (width < 0 || height < 0) {
+  } else if (width <= 0 || height <= 0) {
     throw Error('You can\'t have a negative width or height');
   } else {
     const PERIMETER = (width * 2) + (height * 2);
@@ -47,3 +47,4 @@ function nextEdge(side1, side2) {
 }
 
 module.exports = findPerimeter;
+
