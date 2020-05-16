@@ -1,4 +1,4 @@
-const findPerimeter = require('../JavaScript/Function Challenge/js/perimeter.js');
+const findPerimeter = require('../JS/Function Challenge/js/perimeter.js');
 
 test('Finds perimeter of a rectangle', () => {
   expect(findPerimeter(10, 20)).toBe(60);
