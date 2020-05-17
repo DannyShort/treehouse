@@ -1,11 +1,14 @@
 const findPerimeter = require('../JS/Function Challenge/js/perimeter.js');
 
-test('Finds perimeter of a rectangle', () => {
+test('Finds perimeter of a rectangle with two integers', () => {
   expect(findPerimeter(10, 20)).toBe(60);
   expect(findPerimeter(40, 10)).toBe(100);
   expect(findPerimeter(10, 10)).toBe(40);
+});
+
+test('Finds perimeter of a rectangle with floats', () => {
   expect(findPerimeter(10.5, 20)).toBe(61);
-  expect(findPerimeter(5.5, 20)).toBe(51);
+  expect(findPerimeter(20, 5.5)).toBe(51);
   expect(findPerimeter(5.1, 20)).toBe(50.2);
 });
 
@@ -38,14 +41,14 @@ test('Negative height throws an error', () => {
 });
 
 
-test('Zero Width Cause an error', () => {
+test('0 Width throws an error', () => {
   function useAString() {
     findPerimeter(0, 6);
   }
   expect(useAString).toThrowError('You can\'t have a negative width or height');
 });
 
-test('Zero Height Cause an error', () => {
+test('0 Height throws an error', () => {
   function useAString() {
     findPerimeter(6, 0);
   }
