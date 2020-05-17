@@ -1,3 +1,3 @@
 # Treehouse Project Files
 
-![Coverage badge][/coverage/badge.svg]
+![Coverage Badge](https://github.com/DannyShort/treehouse/blob/master/coverage/badge.svg)
