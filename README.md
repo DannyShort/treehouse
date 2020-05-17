@@ -1,3 +1,3 @@
 # Treehouse Project Files
 
-![Coverage Badge](https://github.com/DannyShort/treehouse/blob/master/coverage/badge.svg)
+![Coverage Badge](https://github.com/DannyShort/treehouse/blob/master/coverage/badge.svg) ![Last Commit Badge](https://img.shields.io/github/last-commit/dannyshort/treehouse) ![Language Badge](https://img.shields.io/github/languages/top/dannyshort/treehouse) [![Requirements Status](https://requires.io/github/DannyShort/treehouse/requirements.svg?branch=master)](https://requires.io/github/DannyShort/treehouse/requirements/?branch=master)
