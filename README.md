@@ -1,3 +1,3 @@
 # Treehouse Project Files
 
-![Coverage badge][./coverage/badge.svg]
+![Coverage badge][/coverage/badge.svg]
