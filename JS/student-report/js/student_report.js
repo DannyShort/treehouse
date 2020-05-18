@@ -1,4 +1,3 @@
-let message = '';
 let student;
 
 function print(message) {
@@ -7,7 +6,7 @@ function print(message) {
 }
 
 function getStudentReport(student) {
-  message += '<h2>Student: ' + student.name + '</h2>';
+  let message = '<h2>Student: ' + student.name + '</h2>';
   message += '<p>Track: ' + student.track + '</p>';
   message += '<p>Points: ' + student.points + '</p>';
   message += '<p>Achievements: ' + student.achievements + '</p>';

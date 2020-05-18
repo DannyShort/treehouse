@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --coverage && make-coverage-badge"
+    "lint": "eslint ./",
+    "test": "jest --verbose --coverage",
+    "posttest": "make-coverage-badge"
   },
   "jest": {
     "coverageReporters": [

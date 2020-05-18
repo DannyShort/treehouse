@@ -1,3 +1,3 @@
-let myShoppingList = ['carrots', 'bread', 'milk'];
+const MY_SHOPPING_LIST = ['carrots', 'bread', 'milk'];
 
-myShoppingList.length;
+MY_SHOPPING_LIST.length;
